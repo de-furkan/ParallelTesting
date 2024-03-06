@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="ParallelTesting" parallel="methods" thread-count="2">
+        <classes>
+            <class name="ParallelTesting">
+
+                <!--
+                    - İstediğimiz tarayıcıyı çalıştırabilmek için burada <parameter> etiketini çağırmamız gerekiyor.
+                    - Istediğimiz değeri test sınıfımıza gönderecektir.
+                -->
+                <parameter name="browser" value="adksakjldsajljkalsdjklasd"></parameter>
+            </class>
+        </classes>
+    </test>
+</suite>
